@@ -1,0 +1,50 @@
+<div *ngIf="lugar">
+    <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+        <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+            <div class="ae-grid__item item-lg-5 ">
+                <img src="assets/img/lugares/{{id}}/main.jpg" alt="Urku Portfolio">
+                <small>{{lugar.leyenda}}</small>
+            </div>
+            <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+                <h1 class="ae-u-bolder rk-portfolio-title ">
+            {{lugar.nombre}}
+        </h1>
+        <p class="ae-theta rk-portfolio-category text-capitalize">
+            {{lugar.categoria}}
+        </p>
+             <p>{{lugar.ubicacion}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+        <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+            <div class="ae-grid__item item-lg-5 ">
+                <h4 class="rk-portfolio-inner-title ">
+                    {{lugar.subtitulo}}
+                </h4>
+                 {{lugar.historia}}
+            </div>
+            <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+                <img src="assets/img/lugares/{{id}}/pic-1.jpg"  alt="Urku Portfolio">
+                <small>{{lugar.leyenda1}}</small>
+            </div>
+        </div>
+    </div>
+    <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+        <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+            <div class="ae-grid__item item-lg-5">
+                <img src="assets/img/lugares/{{id}}/pic-2.jpg" alt="Urku Portfolio">
+                <small>{{lugar.leyenda2}}</small>
+
+            </div>
+            <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+                <h4 class="ae-u-bolder">
+                    {{lugar.nombre}}
+                </h4>
+                {{lugar.descripcion}}
+            </div>
+        </div>
+    </div>
+    
+
+</div>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { InfoPaginaService } from './services/info-pagina.service';
+import { InfoLugarService } from './services/info-lugares.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'venezuela';
+  constructor(
+    public infoPaginaService: InfoPaginaService, 
+    public infoLugarService: InfoLugarService) {
+
+  }
 }
