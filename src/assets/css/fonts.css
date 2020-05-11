@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'michland';
+    src: url('fonts/michland/michland.woff2') format('woff2'),
+         url('fonts/michland/michland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto/roboto.woff2') format('woff2'),
+         url('fonts/roboto/roboto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/opensans/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
