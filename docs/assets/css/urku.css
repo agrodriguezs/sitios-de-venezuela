@@ -8,8 +8,12 @@
 @charset "UTF-8";
 body {
   margin: 0;
+  font-family: 'opensans', Arial;
 }
+.rk-leyenda {
+  padding-bottom: 2rem;
 
+}
 .rk-container {
   margin-right: auto;
   margin-left: auto;
@@ -17,6 +21,9 @@ body {
   padding-right: .25rem;
 }
 @media (min-width: 40em) {
+  .rk-bandera {
+    text-align: center;
+  }
   .rk-container {
     max-width: 88.88889em;
     width: 95vw;
@@ -50,19 +57,23 @@ body {
   .rk-main {
     position: relative;
   }
+ 
 }
+
 
 .rk-header {
   background-color: #fff;
   position: relative;
   z-index: 5;
+  padding-left: 40px; 
+  padding-right: 40px;
 }
 .top-fixed .rk-header {
   position: fixed;
 }
 
 .rk-topbar {
-  -webkit-box-align: start;
+   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
           align-items: flex-start;
@@ -77,8 +88,8 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 3.3rem;
-  padding-top: 2.8rem;
+  padding-bottom: 2.3rem;
+  padding-top: 1.8rem;
 }
 @media (min-width: 64em) {
   .rk-topbar {
@@ -91,17 +102,20 @@ body {
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  font-size: 1.375rem;
-  font-weight: 700;
-  letter-spacing: 2.25px;
+  font-size: 4rem;
+  font-family: 'michland';
   text-align: center;
-  text-transform: uppercase;
   width: 20%;
 }
-.rk-logo img{
+.rk-bandera{
 
-  width: 40px;
-  vertical-align: center;
+  position: relative;
+  top: -10px;
+  margin-right: 10px;
+}
+
+.rk-bandera img {
+    width: 5rem;
 }
 .rk-logo sup {
   font-size: .5625rem;
@@ -116,6 +130,7 @@ body {
             flex: 1;
     text-align: left;
   }
+
 }
 
 .rk-search {
@@ -126,6 +141,7 @@ body {
   margin-left: 7.7rem;
   padding-top: .16rem;
   position: relative;
+  font-weight: 900;
 }
 .rk-search label,
 .rk-search input {
@@ -164,8 +180,9 @@ body {
 }
 .rk-search input:focus {
   opacity: 1;
-  padding-left: .5rem;
-  width: 100px;
+  padding-left: 1.5rem;
+  width: 190px;
+  border-bottom: 1px solid #E3E1E0;
 }
 .rk-search input:focus + label {
   color: #a0a0a0;
@@ -439,6 +456,7 @@ body {
   .rk-layout-ctrl-mobile {
     display: none;
   }
+
 }
 @media (min-width: 64em) {
   .rk-layout-ctrl-mobile {
@@ -477,6 +495,15 @@ body {
   display: block;
   width: 100%;
 }
+
+.rk-item h2 {
+
+}
+.rk-item p {
+  font-family: 'opensans', Arial;
+}
+
+
 .rk-item:hover .item-meta {
   opacity: 1;
   visibility: visible;
@@ -568,11 +595,13 @@ body {
   top: 0;
 }
 .item-meta h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+    font-family: 'michland';
+    font-weight: 300;
+    font-size: 2.5rem !important;
 }
 .item-meta p {
-  font-size: 1.5em;
+  font-family: 'opensans';
+  font-size: 0.3rem;
   margin-bottom: 0;
 }
 @media (min-width: 64em) {
@@ -1292,7 +1321,9 @@ body {
 }
 
 .rk-portfolio-title {
-  letter-spacing: .0359em;
+  font-family: 'michland';
+  font-weight: 300;
+  /*letter-spacing: .0359em;*/
 }
 
 .rk-portfolio-category {
@@ -1316,7 +1347,10 @@ body {
 }
 
 .rk-portfolio-inner-title {
-  margin-top: .2em;
+  font-family:  'michland';
+  font-size: 2em;
+
+  margin-top: .1em;
 }
 
 .rk-portfolio-details p {
@@ -2026,6 +2060,19 @@ body {
 }
 
 @media (max-width: 64em) {
+    .rk-bandera {
+    width: 100%;
+    text-align: center;
+    }
+    .rk-bandera img {
+    width: 7rem;
+    position: relative;
+    }   
+    .rk-topbar{
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    
   #mobile-menu:checked ~ .rk-topbar .rk-navigation {
     display: -webkit-box;
     display: -webkit-flex;
