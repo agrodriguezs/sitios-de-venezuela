@@ -6,9 +6,27 @@
  Licensed under  MIT 
 \* * * * * * * * * * * * * * * * * * * * */
 @charset "UTF-8";
+
 body {
   margin: 0;
   font-family: 'opensans', Arial;
+}
+figure {
+  margin: 0px;
+}
+/* imghvr-slide-up
+   ----------------------------- */
+.imghvr-slide-up figcaption {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    padding-bottom: 0.2rem;
+    font-family: Arial;
+    color: white;
+    -webkit-transform: translateY(-2.2rem);
+            transform: translateY(-2.2rem);
 }
 .rk-leyenda {
   padding-bottom: 2rem;
@@ -88,7 +106,7 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 2.3rem;
+
   padding-top: 1.8rem;
 }
 @media (min-width: 64em) {
@@ -2097,8 +2115,6 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-bottom: 2.3rem;
-    padding-top: 1.8rem;
 
 }
   #mobile-menu:checked ~ .rk-topbar .rk-navigation {
