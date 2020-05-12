@@ -2061,18 +2061,46 @@ body {
 
 @media (max-width: 64em) {
     .rk-bandera {
-    width: 100%;
-    text-align: center;
+     text-align: center;
+      margin-left: 20px;
     }
     .rk-bandera img {
-    width: 7rem;
+    width: 4rem;
     position: relative;
     }   
-    .rk-topbar{
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+   
+    .rk-header {
+    padding-right: 5px; 
     }
-    
+    .rk-logo {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: left;
+    font-size: 2.1em;
+}
+}
+    .rk-topbar {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 2.3rem;
+    padding-top: 1.8rem;
+
+}
   #mobile-menu:checked ~ .rk-topbar .rk-navigation {
     display: -webkit-box;
     display: -webkit-flex;
